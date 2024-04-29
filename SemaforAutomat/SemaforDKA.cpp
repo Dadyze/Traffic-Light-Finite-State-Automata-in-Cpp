@@ -12,12 +12,12 @@ void SemaforDKA::loop()
     switch (trenutnoStanje) {
     case StanjaSemafora::GLAVNA_ZELENO:
     {
+        LOG("{S1} - Glavna Cesta je Zeleno, Sporedna je Crveno.");
         if (SenzorAuta) {
             Cekaj(longTimer*1s);
             trenutnoStanje = StanjaSemafora::GLAVNA_ZUTO;
             break;
         }
-        LOG("{ S1 } - Glavna Cesta je Zeleno, Sporedna je Crveno.");
         trenutnoStanje = StanjaSemafora::GLAVNA_ZELENO;
         break;
 
@@ -48,4 +48,6 @@ void SemaforDKA::loop()
 void SemaforDKA::SenzorInfo(bool detected)
 {
     this->SenzorAuta = detected;
+    if(!detected)
+        this->trenutnoStanje = StanjaSemafora::GLAVNA_ZELENO;
 }

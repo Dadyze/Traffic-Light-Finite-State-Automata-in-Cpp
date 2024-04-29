@@ -1,6 +1,6 @@
 ﻿#include "SemaforDKA.h"
-#define dugiTajmer 5 //Vrijeme trajanja Crvenog/Zelenog Svjetla
-#define kratkiTajmer 2 //Vrijeme Trajanja Zutog svijetla
+#define dugiTajmer 2 //Vrijeme trajanja Crvenog/Zelenog Svjetla
+#define kratkiTajmer 1 //Vrijeme Trajanja Zutog svijetla
 
 void Pravila();
 void PokreniAutomat(SemaforDKA T);
@@ -16,7 +16,6 @@ int main() {
 
 void PokreniAutomat(SemaforDKA T) {
     char slovo;
-    T.loop();
     while ((slovo = _getch()) != 'q') {
         if (slovo == 'c') {
             T.SenzorInfo(true);
@@ -48,6 +47,8 @@ void Pravila() {
     LOG ( "4.) Dok je pritisnuta tipka stanja se mijenjaju od S1-S2-S3-S4 " );
     LOG ( "5.) Duzina Trajanja stanja (zelenog/crvenog i zutog svijetla) je odredjena tajmerima" );
     LOG ( "6.) Pritiskom na tipku 'v' sklanjamo auta sa sporedne ceste i vracamo se u stanje S1" );
-    LOG ( "1.) Pritiskom na tipku 'q' Prekidamo simulaciju" );
+    LOG ( "7.) Pritiskom na tipku 'q' Prekidamo simulaciju" );
     LOG ( "-----------------------------------------------------------------------------" );
+    LOG ( "Polazno stanje: (pritisnite c za detekciju auta sa sporedne ceste) " );
+    LOG ( "{S1} - Glavna Cesta Zeleno, Sporedna Crveno ")
 }
