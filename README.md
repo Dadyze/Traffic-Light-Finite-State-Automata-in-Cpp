@@ -8,7 +8,7 @@ This project implements a traffic light system using Finite State Automata (FSA)
 ```
 Welcome to the Implementation of the Traffic Light as a Finite Automaton  
 Author: Adin Jahic  
-Course: Automata and Formal Languages  
+Field: Automata and Formal Languages  
 Date of Creation: 29.04.2024  
 -------------------------------------------------------------------------------
 Rules and Assumptions:
