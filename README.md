@@ -18,11 +18,11 @@ Rules and Assumptions:
    - S3) SideRoadGreen (Main Road Red)
    - S4) SideRoadYellow (Main Road Red)
 2. As long as a car is not detected by the sensor on the side road, the main road stays in State S1.
-3. Car detection on the side road is simulated by pressing the **'c'** key.
-4. While the key is pressed, the states change from **S1-S2-S3-S4**.
+3. Car detection on the side road is simulated by pressing the 'c' key.
+4. While the key is pressed, the states change from S1-S2-S3-S4
 5. The duration of the states (green/red and yellow lights) is determined by timers.
-6. Pressing the **'v'** key removes the car from the side road and returns to State S1.
-7. Pressing the **'q'** key terminates the simulation.
+6. Pressing the 'v' key removes the car from the side road and returns to State S1.
+7. Pressing the 'q' key terminates the simulation.
 
 ```
 
