@@ -69,19 +69,11 @@ To build and run this project, you will need:
 
 The duration of each traffic light state (green, yellow, red) can be adjusted by modifying the timers in the source code.
 
-## Project Structure
-
-- **src/**: Contains the source code for the traffic light finite state automata.
-- **include/**: Contains header files for the project.
-- **docs/**: Documentation files (if applicable).
 
 ## Contributing
 
 Contributions are welcome! If you find a bug or have a feature request, feel free to open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 ## Acknowledgments
 
